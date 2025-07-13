@@ -12,16 +12,20 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | Folder Name                | Concept Description                                |
 |---------------------------|----------------------------------------------------|
-| 1_syntax_and_semantics    | Understanding how Solidity is written              |
-| 2_data_types              | Working with numbers, strings, booleans etc.       |
-| 3_variables_and_constants | Storing values and using constants                 |
-| 4_operators               | Performing calculations and logic                  |
-| 5_functions               | Creating blocks that execute actions               |
-| 6_conditionals            | Using if-else logic in contracts                   |
-| 7_loops                   | Repeating actions with for/while loops             |
-| 8_arrays                  | Storing and accessing lists of items               |
-| 9_mappings                | Creating key-value pairs like a robot dictionary   |
-| 10_structs                | Grouping multiple data types into a custom format  |
+| `1_syntax_and_semantics`    | Understanding how Solidity is written              |
+| `2_data_types`              | Working with numbers, strings, booleans etc.       |
+| `3_variables_and_constants` | Storing values and using constants                 |
+| `4_operators`               | Performing calculations and logic                  |
+| `5_functions`               | Creating blocks that execute actions               |
+| `6_conditionals`            | Using if-else logic in contracts                   |
+| `7_loops`                   | Repeating actions with for/while loops             |
+| `8_arrays`                  | Storing and accessing lists of items               |
+| `9_mappings`                | Creating key-value pairs like a robot dictionary   |
+| `10_structs`                | Grouping multiple data types into a custom format  |
+| `11_modifiers`              | Restricting access or conditions before execution  |
+| `12_events`                 | Broadcasting data when something happens           |
+| `13_error_handling`         | Preventing and managing unwanted actions           |
+| `14_constructor`            | Setting values when the contract is first created  |
 
 ## Projects So Far
 
@@ -29,8 +33,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| MyNameRobot.sol        | A simple contract that stores and returns a name                        |
-| FavoriteThing.sol      | A contract that stores a favorite toy or item and returns it publicly   |
+| `MyNameRobot.sol`        | A simple contract that stores and returns a name                        |
+| `FavoriteThing.sol`      | A contract that stores a favorite toy or item and returns it publicly   |
 
 ---
 
@@ -38,8 +42,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| MyInfo.sol             | Stores your name, age, and whether you like robots                      |
-| MyFruitBasket.sol      | Holds an array of fruits using the string[] data type                   |
+| `MyInfo.sol`             | Stores your name, age, and whether you like robots                      |
+| `MyFruitBasket.sol`      | Holds an array of fruits using the `string[]` data type                 |
 
 ---
 
@@ -47,8 +51,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| MoodChanger.sol        | Demonstrates variable updates and storage                               |
-| MyBirthYear.sol        | Uses a constant to store a birth year                                   |
+| `MoodChanger.sol`        | Demonstrates variable updates and storage                               |
+| `MyBirthYear.sol`        | Uses a constant to store a birth year                                   |
 
 ---
 
@@ -56,8 +60,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| SimpleMath.sol         | Performs addition, subtraction, multiplication, and division            |
-| CanIHaveIceCream.sol   | Uses logical and comparison operators to decide if you get ice cream    |
+| `SimpleMath.sol`         | Performs addition, subtraction, multiplication, and division            |
+| `CanIHaveIceCream.sol`   | Uses logical and comparison operators to decide if you get ice cream    |
 
 ---
 
@@ -65,8 +69,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| LittleCalculator.sol   | A tiny calculator that adds two numbers                                 |
-| RobotGreeter.sol       | Greets the user with their name using a function                        |
+| `LittleCalculator.sol`   | A tiny calculator that adds two numbers                                 |
+| `RobotGreeter.sol`       | Greets the user with their name using a function                        |
 
 ---
 
@@ -74,8 +78,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| AgeChecker.sol         | Checks if a user is old enough based on a given age                     |
-| ToyDecision.sol        | Returns messages that decides if you get a toy or not                   |
+| `AgeChecker.sol`         | Checks if a user is old enough based on a given age                     |
+| `ToyDecision.sol`        | Returns different messages depending on what toy you want               |
 
 ---
 
@@ -83,8 +87,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| CountToTen.sol         | Uses a for loop to count from 1 to 10                                   |
-| AddUntilLimit.sol      | Uses a while loop to add numbers until a limit is reached               |
+| `CountToTen.sol`         | Uses a `for` loop to count from 1 to 10                                 |
+| `AddUntilLimit.sol`      | Uses a `while` loop to add numbers until a limit is reached             |
 
 ---
 
@@ -92,8 +96,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| MyFruitBasket.sol      | Stores a list of fruits in an array and retrieves them                  |
-| NumberBox.sol          | Stores numbers in an array and allows users to fetch any by index       |
+| `MyFruitBasket.sol`      | Stores a list of fruits in an array and retrieves them                  |
+| `NumberBox.sol`          | Stores numbers in an array and allows users to fetch any by index       |
 
 ---
 
@@ -101,8 +105,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| StarGiver.sol          | Uses a mapping to store how many stars a name has received              |
-| ScoreKeeper.sol        | Uses msg.sender to track how many times a user increased their score    |
+| `StarGiver.sol`          | Uses a mapping to store how many stars a name has received              |
+| `ScoreKeeper.sol`        | Uses `msg.sender` to track how many times a user increased their score  |
 
 ---
 
@@ -110,8 +114,44 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| FriendBook.sol         | Stores a list of friends with name, age, and favorite fruit             |
-| PetTracker.sol         | Keeps track of pets using name, type of animal, and age                 |
+| `FriendBook.sol`         | Stores a list of friends with name, age, and favorite fruit             |
+| `PetTracker.sol`         | Keeps track of pets using name, type of animal, and age                 |
+
+---
+
+### Folder: `11_modifiers`
+
+| File Name              | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| `CookieJar.sol`          | Only the contract owner can take cookies (access controlled)            |
+| `RobotLock.sol`          | Restricts certain functions until conditions are met                    |
+
+---
+
+### Folder: `12_events`
+
+| File Name              | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| `GiftSender.sol`         | Sends a message and logs it with an event                              |
+| `ScoreAnnouncer.sol`     | Emits events when scores are updated                                   |
+
+---
+
+### Folder: `13_error_handling`
+
+| File Name              | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| `SimpleBank.sol`         | Prevents users from withdrawing more than they deposited               |
+| `ToyGuard.sol`           | Throws an error when requesting forbidden toys                         |
+
+---
+
+### Folder: `14_constructor`
+
+| File Name              | Description                                                             |
+|------------------------|-------------------------------------------------------------------------|
+| `MyConstructor.sol`      | Sets the owner or message during contract creation                      |
+| `ContractInitializer.sol`| Initializes contract values only once                                  |
 
 ---
 
@@ -134,8 +174,9 @@ I am learning Solidity from scratch with a focus on truly understanding the core
 
 ## Next Steps
 
-- Continue into modifiers, events, and error handling  
-- Build more complex projects using combinations of concepts  
-- Explore real-world DApps and deploy simple contracts to testnets
+- Add more intermediate concepts (enums, inheritance, interfaces)  
+- Start building simple dApps  
+- Experiment with deployments to testnets  
+- Try integrating with front-end frameworks like React
 
 This repo will continue to grow as I learn more about Ethereum development and blockchain programming with Solidity.
