@@ -163,6 +163,7 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |---------------------------|---------------------------------------------------------------|
 | `15_enums`                  | Using user-defined types to handle fixed, named options       |
 | `16_inheritance`            | Reusing and extending logic from other contracts              |
+| `17_interface`              | Making sure certain functions exist in a contract, without writing out their actual code yet.      |
 
 ---
 
@@ -185,6 +186,16 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `RobotChild.sol`        | Inherits from the parent contract and uses its function                   |
 | `GreeterBase.sol`       | A base contract with a virtual greeting method                            |
 | `CustomGreeter.sol`     | Inherits `GreeterBase` and overrides the greet function with a new message|
+
+---
+
+### Folder: `17_interface`
+
+| File Name              | Description                                                               |
+|------------------------|---------------------------------------------------------------------------|
+| `RobotInstruction.sol` | This project creates a robot interface and another contract that obeys it.  |
+| `SimpleMessenger.sol`  | Two contracts talk using an interface, like passing a message back and forth.|
+
 
 ---
 
