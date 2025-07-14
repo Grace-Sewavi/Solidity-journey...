@@ -27,6 +27,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `13_error_handling`         | Preventing and managing unwanted actions           |
 | `14_constructor`            | Setting values when the contract is first created  |
 
+---
+
 ## Projects So Far
 
 ### Folder: `1_syntax_and_semantics`
@@ -141,17 +143,48 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | File Name              | Description                                                             |
 |------------------------|-------------------------------------------------------------------------|
-| `SimpleBank.sol`         | Prevents users from withdrawing more than they deposited               |
-| `ToyGuard.sol`           | Throws an error when requesting forbidden toys                         |
+| `CookieLimit.sol`        | Prevents a user from taking more cookies than allowed                  |
+| `SecretDoor.sol`         | Restricts access to a secret door and throws errors if misused         |
 
 ---
 
 ### Folder: `14_constructor`
 
-| File Name              | Description                                                             |
-|------------------------|-------------------------------------------------------------------------|
-| `MyConstructor.sol`      | Sets the owner or message during contract creation                      |
-| `ContractInitializer.sol`| Initializes contract values only once                                  |
+| File Name                  | Description                                                             |
+|----------------------------|-------------------------------------------------------------------------|
+| `MyConstructor.sol`        | Sets the owner or message during contract creation                      |
+| `ContractInitializer.sol`  | Initializes contract values only once                                   |
+
+---
+
+## Intermediate Concepts
+
+| Folder Name                | Concept Description                                           |
+|---------------------------|---------------------------------------------------------------|
+| `15_enums`                  | Using user-defined types to handle fixed, named options       |
+| `16_inheritance`            | Reusing and extending logic from other contracts              |
+
+---
+
+## Projects So Far
+
+### Folder: `15_enums`
+
+| File Name              | Description                                                               |
+|------------------------|---------------------------------------------------------------------------|
+| `ToySelector.sol`       | Lets users choose toys from a list of predefined options using enums      |
+| `MoodStatus.sol`        | Tracks the robot's mood as Happy, Sad, or Confused using enums            |
+
+---
+
+### Folder: `16_inheritance`
+
+| File Name              | Description                                                               |
+|------------------------|---------------------------------------------------------------------------|
+| `RobotParent.sol`       | Defines a parent contract with a reusable greeting function               |
+| `RobotChild.sol`        | Inherits from the parent contract and uses its function                   |
+| `GreeterBase.sol`       | A base contract with a virtual greeting method                            |
+| `CustomGreeter.sol`     | Inherits `GreeterBase` and overrides the greet function with a new message|
 
 ---
 
@@ -174,9 +207,9 @@ I am learning Solidity from scratch with a focus on truly understanding the core
 
 ## Next Steps
 
-- Add more intermediate concepts (enums, inheritance, interfaces)  
-- Start building simple dApps  
-- Experiment with deployments to testnets  
-- Try integrating with front-end frameworks like React
+- Continue exploring intermediate and advanced Solidity features  
+- Add interfaces, libraries, abstract contracts, and security best practices  
+- Start building real-world dApps and deploy them to testnets  
+- Connect with front-end frameworks like React or Vue
 
 This repo will continue to grow as I learn more about Ethereum development and blockchain programming with Solidity.
