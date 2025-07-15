@@ -166,6 +166,7 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `17_interface`              | Making sure certain functions exist in a contract, without writing out their actual code yet.      |
 | `18_Abstract_Contract`      | allows you to define a structure or template for other contracts to follow.          |
 | `19_Library`                | a little toolbox full of reusable code.                       |
+| `20_view_pure_payable`      | **`view`**: Just looking!, **`pure`**: Like a math genius!, **`payable`**: These are money-receivers!                   |
 
 ---
 
@@ -216,6 +217,15 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |------------------------|--------------------------------------------------------------------------|
 | `MathLibrary.sol`      | A simple math library with reusable functions like add, subtract, etc.  |
 | `RobotCalculator.sol`  | A smart contract that uses `MathLibrary` to solve math problems          |
+
+---
+
+### Folder: `20_view_pure_payable`
+
+| File Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `MyViewFunction.sol`     | Demonstrates how to read data from the blockchain without changing it      |
+| `PayableContract.sol`    | Accepts ether into the contract using a `payable` function and tracks it   |
 
 ---
 
