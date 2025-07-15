@@ -1,0 +1,21 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// This is a library — a magical toolbox of math functions!
+library MathLibrary {
+    
+    // This function doubles a number
+    function double(uint x) public pure returns (uint) {
+        return x * 2;
+    }
+
+    // This function squares a number
+    function square(uint x) public pure returns (uint) {
+        return x * x;
+    }
+
+    // This function adds two numbers
+    function add(uint a, uint b) public pure returns (uint) {
+        return a + b;
+    }
+}
