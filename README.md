@@ -161,10 +161,11 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 | Folder Name                | Concept Description                                           |
 |---------------------------|---------------------------------------------------------------|
-| `15_enums`                  | Using user-defined types to handle fixed, named options       |
-| `16_inheritance`            | Reusing and extending logic from other contracts              |
+| `15_enums`                  | Using user-defined types to handle fixed, named options.      |
+| `16_inheritance`            | Reusing and extending logic from other contracts.             |
 | `17_interface`              | Making sure certain functions exist in a contract, without writing out their actual code yet.      |
 | `18_Abstract_Contract`      | allows you to define a structure or template for other contracts to follow.          |
+| `19_Library`                | a little toolbox full of reusable code.                       |
 
 ---
 
@@ -206,6 +207,15 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |------------------|-----------------------------------------------------------------------------|
 | `RobotPlan.sol`   | An abstract contract that declares a general robot with a required action    |
 | `SmartRobot.sol`     | A contract that inherits from `RobotPlan` and implements the missing part |
+
+---
+
+### Folder: `19_library`
+
+| File Name              | Description                                                              |
+|------------------------|--------------------------------------------------------------------------|
+| `MathLibrary.sol`      | A simple math library with reusable functions like add, subtract, etc.  |
+| `RobotCalculator.sol`  | A smart contract that uses `MathLibrary` to solve math problems          |
 
 ---
 
