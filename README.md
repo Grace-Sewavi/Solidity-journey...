@@ -164,6 +164,7 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `15_enums`                  | Using user-defined types to handle fixed, named options       |
 | `16_inheritance`            | Reusing and extending logic from other contracts              |
 | `17_interface`              | Making sure certain functions exist in a contract, without writing out their actual code yet.      |
+| `18_Abstract_Contract`      | allows you to define a structure or template for other contracts to follow.          |
 
 ---
 
@@ -198,6 +199,16 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 
 ---
+
+### Folder: `18_Abstract_Contract`
+
+| File Name         | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| `RobotPlan.sol`   | An abstract contract that declares a general robot with a required action    |
+| `SmartRobot.sol`     | A contract that inherits from `RobotPlan` and implements the missing part |
+
+---
+
 
 ## Why This Project Exists
 
