@@ -167,6 +167,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `18_Abstract_Contract`      | allows you to define a structure or template for other contracts to follow.          |
 | `19_Library`                | a little toolbox full of reusable code.                       |
 | `20_view_pure_payable`      | **`view`**: Just looking!, **`pure`**: Like a math genius!, **`payable`**: These are money-receivers!                   |
+| `21_fallback_and_receive`   | **`receive()`**: Automatically triggered when someone sends Ether without any data, **`fallback()`**: Activated when someone calls a function that doesn’t exist.                  |
+| `22_time_and_block_info`     | teaches you how to access important **blockchain environment variables** in Solidity.      |
 
 ---
 
@@ -229,6 +231,23 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 ---
 
+### Folder: `21_fallback_and_receive`
+
+| File Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `PiggyBank.sol`          | Accepts Ether using the `receive()` function, like a savings robot         |
+| `FallbackHandler.sol`     | Uses the `fallback()` function to catch unknown calls and store messages   |
+
+---
+
+### Folder: `22_time_and_block_info`
+
+| File Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `TimeLocker.sol`         | Locks a message or action until a specific blockchain timestamp            |
+| `BlockLogger.sol`        | Logs key information about the current block like number, time, miner etc. |
+
+---
 
 ## Why This Project Exists
 
