@@ -169,6 +169,9 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `20_view_pure_payable`      | **`view`**: Just looking!, **`pure`**: Like a math genius!, **`payable`**: These are money-receivers!                   |
 | `21_fallback_and_receive`   | **`receive()`**: Automatically triggered when someone sends Ether without any data, **`fallback()`**: Activated when someone calls a function that doesn’t exist.                  |
 | `22_time_and_block_info`     | teaches you how to access important **blockchain environment variables** in Solidity.      |
+| `23_gas_optimization`        | Gas is what powers smart contracts, and optimizing gas helps you **save money**            |
+| `24_contract_to_contract`    | This is super useful when we want contracts to work together and **share information**..   |
+| `25_import_multifile`        |  Encourages **reusability** — don’t write the same code twice!                             |
 
 ---
 
@@ -248,6 +251,39 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `BlockLogger.sol`        | Logs key information about the current block like number, time, miner etc. |
 
 ---
+
+### Folder: `23_gas_optimization`
+
+| File Name               | Description                                                       |
+|------------------------|-------------------------------------------------------------------|
+| `EfficientStorage.sol` | Shows how to save gas by packing variables smartly              |
+| `CheapCounter.sol`     | Builds a counter that uses less gas to count and store numbers  |
+
+---
+
+### Folder: `24_contract_to_contract`
+
+| File Name              | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| `Messenger.sol`        | A contract that sends messages to another contract (MessageReceiver)        |
+| `MessageReceiver.sol`  | A contract that receives and stores messages from other contracts           |
+| `SimpleBank.sol`       | A basic contract to handle deposits and balances                            |
+| `BankCaller.sol`       | A contract that interacts with `SimpleBank` to deposit and check balances   |
+
+---
+
+### Folder: `25_import_multifile`
+
+| File Name         | Description                                                                 |
+|-------------------|-----------------------------------------------------------------------------|
+| `ToyBox.sol`       | Main contract that adds toys and counts them using functions from `ToyHelper.sol` |
+| `ToyHelper.sol`    | A helper contract that contains a toy-counting function                    |
+| `MiniBank.sol`     | A simple bank that lets users deposit and view balance using helper logic |
+| `BankTools.sol`    | A helper contract with a function to get a user's balance                 |
+
+---
+
+
 
 ## Why This Project Exists
 
