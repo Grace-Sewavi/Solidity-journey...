@@ -283,6 +283,78 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 ---
 
+## Advanced Concepts
+
+| Folder Name                 | Concept Description                                           |
+|-----------------------------|---------------------------------------------------------------|
+| `26_security_best_practices`| To keep your smart contracts safe and sound            |
+| `27_design_patterns`        |  Smart ways to build your contract like a pro!         |
+| `28_gas_optimization (Advanced)`        | Making smart contracts faster and cheaper to run!       |
+| `29_advanced_contract_communication`    | Smart contracts become little **agents** that can interact, borrow logic, and even control each other!      |
+|`30_proxy_upgradeable`       | Letting you change your contract’s logic **without losing data**                 |
+|`31_inline_assembly_yul`     | A superpower mode where you talk directly to the Ethereum Virtual Machine (EVM)!  |
+
+
+## Projects So Far
+
+### Folder: `26_security_best_practices`
+
+| File Name            | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `CandyJar.sol`       | A secure contract that uses a lock to prevent reentrancy attack             |
+| `TrustyContract.sol` | A contract showing why `tx.origin` should not be used for authentication    |
+
+---
+
+### Folder: `27_design_patterns`
+
+| File Name          | Description                                                                 |
+|--------------------|-----------------------------------------------------------------------------|
+| `SafeBank.sol`     | A bank contract using Checks-Effects-Interactions pattern for secure withdrawals |
+| `PausableGame.sol` | A contract that can be paused and resumed using an Emergency Stop pattern   |
+
+---
+
+### Folder: `28_gas_optimization (Advanced)`
+
+| File Name            | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `EfficientStorage.sol` | Demonstrates packing variables using smaller data types to save storage gas |
+| `CheapCounter.sol`     | Shows how `immutable`, `constant`, and custom `error` reduce gas usage      |
+
+---
+
+### Folder: `29_advanced_contract_communication`
+
+| File Name            | Description                                                                       |
+|----------------------|-----------------------------------------------------------------------------------|
+| `ContractB.sol`        | Target contract that holds a message                                            |
+| `MessengerBot.sol`     | Calls ContractB using an interface to send messages                             |
+| `LogicLibrary.sol`     | A logic contract that stores a number                                           |
+| `DelegateCaller.sol`   | Uses `delegatecall` to run LogicLibrary code and modify its own storage         |
+
+---
+
+### Folder: `30_proxy_upgradeable`
+
+| File Name           | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| `Proxy.sol`         | A basic proxy that forwards all calls to another contract using delegatecall |
+| `LogicV1.sol`       | First version of logic: simple setter for a number                          |
+| `LogicV2.sol`       | Second version of logic: multiplies the number by 2                         |
+| `SimpleProxy.sol`   | Transparent Proxy with upgrade function and admin control                   |
+| `CounterLogic.sol`  | Logic contract with increment function for counting                         |
+
+---
+
+### Folder: `31_inline_assembly_yul`
+
+| File Name            | Description                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| `AddUsingAssembly.sol` | Adds two numbers using EVM `add` opcode via inline assembly               |
+| `StoreAndLoad.sol`     | Demonstrates using `sstore` and `sload` to manually access storage slots   |
+
+---
 
 
 ## Why This Project Exists
