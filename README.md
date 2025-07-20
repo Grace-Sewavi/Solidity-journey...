@@ -294,7 +294,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `30_proxy_upgradeable`       | Letting you change your contract’s logic **without losing data**                  |
 | `31_inline_assembly_yul`     | A superpower mode where you talk directly to the Ethereum Virtual Machine (EVM)!  |
 | `32_erc_standards`           | Rulebooks for creating tokens and NFTs. Following these rules helps your contract interact with wallets like MetaMask, marketplaces like OpenSea, and exchanges like Uniswap! |
-| `33_advanced_events_logging` | They’re useful for tracking what’s happening in your app.                          |
+| `33_advanced_events_logging`   | They’re useful for tracking what’s happening in your app.                          |
+| `34_flash_loans_arbitrage`     | Key skills in advanced DeFi strategies.                                            |
 
 
 ## Projects So Far
@@ -373,6 +374,15 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |--------------------------|-----------------------------------------------------------------------------|
 | `ActionLogger.sol`       | Emits a custom event with message, user address, and timestamp              |
 | `MiniBankWithEvents.sol` | A simple bank contract that emits events on deposits and withdrawals        |
+
+---
+
+### Folder: `34_flash_loans_arbitrage`
+
+| File Name                | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `MockFlashLoan.sol`      | Demonstrates a safe borrow-repay mock flash loan in one transaction         |
+| `SimpleArbitrageBot.sol` | Shows how to exploit price difference between two mock DEXs for profit      |
 
 ---
 
