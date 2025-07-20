@@ -291,8 +291,9 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `27_design_patterns`        |  Smart ways to build your contract like a pro!         |
 | `28_gas_optimization (Advanced)`        | Making smart contracts faster and cheaper to run!       |
 | `29_advanced_contract_communication`    | Smart contracts become little **agents** that can interact, borrow logic, and even control each other!      |
-|`30_proxy_upgradeable`       | Letting you change your contract’s logic **without losing data**                 |
-|`31_inline_assembly_yul`     | A superpower mode where you talk directly to the Ethereum Virtual Machine (EVM)!  |
+| `30_proxy_upgradeable`       | Letting you change your contract’s logic **without losing data**                  |
+| `31_inline_assembly_yul`     | A superpower mode where you talk directly to the Ethereum Virtual Machine (EVM)!  |
+| `32_erc_standards`           | Rulebooks for creating tokens and NFTs. Following these rules helps your contract interact with wallets like MetaMask, marketplaces like OpenSea, and exchanges like Uniswap! |
 
 
 ## Projects So Far
@@ -353,6 +354,15 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |----------------------|-----------------------------------------------------------------------------|
 | `AddUsingAssembly.sol` | Adds two numbers using EVM `add` opcode via inline assembly               |
 | `StoreAndLoad.sol`     | Demonstrates using `sstore` and `sload` to manually access storage slots   |
+
+---
+
+### Folder: `32_erc_standards`
+
+| File Name         | Description                                                             |
+|-------------------|-------------------------------------------------------------------------|
+| `MyFunToken.sol`  | ERC-20 token contract that mints 1000 FUN tokens to deployer            |
+| `MyBabyNFT.sol`   | ERC-721 NFT contract allowing minting of unique BabyNFTs               |
 
 ---
 
