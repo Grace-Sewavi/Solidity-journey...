@@ -10,8 +10,8 @@ The code is clean, well-commented, and designed for anyone new to programming or
 
 ## Folder Structure
 
-| Folder Name                | Concept Description                                |
-|---------------------------|----------------------------------------------------|
+| Folder Name                 | Concept Description                                |
+|-----------------------------|----------------------------------------------------|
 | `1_syntax_and_semantics`    | Understanding how Solidity is written              |
 | `2_data_types`              | Working with numbers, strings, booleans etc.       |
 | `3_variables_and_constants` | Storing values and using constants                 |
@@ -294,6 +294,7 @@ The code is clean, well-commented, and designed for anyone new to programming or
 | `30_proxy_upgradeable`       | Letting you change your contract’s logic **without losing data**                  |
 | `31_inline_assembly_yul`     | A superpower mode where you talk directly to the Ethereum Virtual Machine (EVM)!  |
 | `32_erc_standards`           | Rulebooks for creating tokens and NFTs. Following these rules helps your contract interact with wallets like MetaMask, marketplaces like OpenSea, and exchanges like Uniswap! |
+| `33_advanced_events_logging` | They’re useful for tracking what’s happening in your app.                          |
 
 
 ## Projects So Far
@@ -363,6 +364,15 @@ The code is clean, well-commented, and designed for anyone new to programming or
 |-------------------|-------------------------------------------------------------------------|
 | `MyFunToken.sol`  | ERC-20 token contract that mints 1000 FUN tokens to deployer            |
 | `MyBabyNFT.sol`   | ERC-721 NFT contract allowing minting of unique BabyNFTs               |
+
+---
+
+### Folder: `33_advanced_events_logging`
+
+| File Name                | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `ActionLogger.sol`       | Emits a custom event with message, user address, and timestamp              |
+| `MiniBankWithEvents.sol` | A simple bank contract that emits events on deposits and withdrawals        |
 
 ---
 
